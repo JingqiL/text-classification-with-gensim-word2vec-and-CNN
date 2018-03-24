@@ -4,7 +4,22 @@
 
 
 
-## Test a Neural Network
+
+## A. Word Embeddings.
+
+### 1. Max features.
+
+Max features is the number of words that you are going to use in training and testing. I've tried to learn every word that shown in the text, the result is pretty bad because you add noise to the dataset. Most time after cleaning the dataset, there will be some words like d, aww, aaamh which originally have some numbers or punctuations in it like d'aww. The model will learn all these things which actually make it deviate from the right way. So, we gonna set a max features like 100,000 or any words shown 2 times and above. This will reduce the noise and improve the performance.
+
+### 2. Pad Sequence.
+
+
+
+### 3. 
+
+
+
+## B. Test a Neural Network.
 
 ### 1. Use small batch to test it before runing on large dataset.
 
@@ -30,7 +45,7 @@ As we know, learning rates decide how fast the neural network learning the chang
 
 ### 5. Batch Size.
 
-One of the most common gradient descent method is mini-batch method. This is good not only because it save your computer from running on a very large dataset that may kill your kernel, it also lead to a much faster speed and a quite good performance on optimization. Usually the batch size is between 32-64 or sometimes 128. A large batch size sometimes will made your training performance unstable. However, for the extremely imbalanced dataset, a large batch size like 300-500 is necessary as you won't want your batch contains only one class which will stop the learning of the neural network. So, in this case, we need to use a large batch size but meanwhile, we get add more training epoches to make it learning enough and make sure the performance is good.
+One of the most common gradient descent method is mini-batch method. This is good not only because it save your computer from running on a very large dataset that may kill your kernel, it also lead to a much faster speed and a quite good performance on optimization. Usually the batch size is between 32-64 or sometimes 128. A large batch size sometimes will make your training performance unstable. However, for the extremely imbalanced dataset, a large batch size like 300-500 is necessary as you won't want your batch contains only one class which will stop the learning of the neural network. So, in this case, we need to use a large batch size but meanwhile, we get add more training epoches to make it learning enough and make sure the performance is good.
 
 ### 6. Filter size (CNN).
 
