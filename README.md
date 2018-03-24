@@ -24,7 +24,7 @@ Three methods are commonly used when overfitting happens.
 
 3. Don't run too many epoches.
 
-#### 4. Learning Rates.
+### 4. Learning Rates.
 
 As we know, learning rates decide how fast the neural network learning the change of the gradient. Large learning rate do lead to a faster loss decay, but when we are going to find the minimum, a big learning rate means a large learning step that we take risks on we may never get the the optimal point of the loss function. In this case, learning rate is the main reason that cause the training fail.
 
