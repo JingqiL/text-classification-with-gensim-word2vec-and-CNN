@@ -53,4 +53,5 @@ One of the most common gradient descent method is mini-batch method. This is goo
 
 ### 8. Chanels.
 
-### 9. 
+### 9. Loss Function
+ 
