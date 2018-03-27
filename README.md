@@ -55,3 +55,19 @@ One of the most common gradient descent method is mini-batch method. This is goo
 
 ### 9. Loss Function
  
+The most famous two loss function known in Neural Network is Softmax and sigmoid. Softmax use the idea of standarization while sigmoid makes multi-class independent.  
+
+When we choose loss function or define our own loss function. The first thing we need to pay attention to is that we hope our loss function doesn't have a point with derivative equals 0.
+
+#### 1. Softmax function(Softmax cross entropy). 
+
+Softmax function is a kind of activation function that standarized the score over all classes. The defination of the function is here. https://en.wikipedia.org/wiki/Softmax_function
+
+Softmax cross entropy is that after applying the softmax function on your score, put it into binary cross entropy function as the loss.
+
+#### 2. Sigmoid function(Sigmoid cross entropy).
+
+Sigmoid function is another kind of activation function that make the original score to be rescaled to [0,1]. This activation function is applied when you have multi-class problem. (A record can have belongs to several classes instead of just one)
+The definiation of the function is here. https://en.wikipedia.org/wiki/Sigmoid_function
+
+#### 3. 
