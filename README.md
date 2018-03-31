@@ -1,6 +1,6 @@
 # Text Classification with FastText and CNN in Tensorflow.
 
-The reason I prefer to use tensorflow instead of Keras is that you can return layer weights if you want to check what happend during the learning process. This is much more easier to detect which parameters you set may be inappropriate while in Keras, I doubt if its convinience in evaluating models. 
+The reason I prefer to use tensorflow instead of Keras is that you can return layer weights if you want to check what happend during the learning process. This is much more easier to detect which parameters you set may be inappropriate while in Keras, I doubt its convinience in evaluating models. 
 
 ## A. Word Embeddings.
 
