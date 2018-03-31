@@ -1,9 +1,6 @@
-# text-classification-with-gensim-word2vec-and-CNN
+# Text Classification with FastText and CNN in Tensorflow.
 
-
-
-
-
+The reason I prefer to use tensorflow instead of Keras is that you can return layer weights if you want to check what happend during the learning process. This is much more easier to detect which parameters you set may be inappropriate while in Keras, I doubt if its convinience in evaluating models. 
 
 ## A. Word Embeddings.
 
@@ -53,7 +50,17 @@ One of the most common gradient descent method is mini-batch method. This is goo
 
 ### 8. Chanels.
 
-### 9. Loss Function
+### 9. Loss.
+
+If you have a very larget dataset like with 1 billion records, then mini-batch may be a good gradient descent method to be applied. The reason is that feeding the whole dataset in the model might kill the kernel. You can first print out the loss of each mini-batch to see how the loss change with time. Sometimes, you will see the loss is decreasing fast and then started to jump up and down during the training. There are 3 main reasons. 
+
+First, some batch have only one label that the learning process doesn't really move forward. This happens usually when you handle with extremely imbalanced data. (Like a dataset i work on recently have 0.18 billion records and only 0.13% of it have a label as 1 and all others are 0. In this case, i choose the batch size as 20000 to make sure that each batch have records that labeled as 1. But also, i need to increase the epoches numbers to make sure that the model learns enough.) 
+
+Second, the learning rate is too large. So it leads to the problem that it never reaches minimal point.
+
+Third, the model is not complex enough to make a better optimization on the loss function. In this case, add some layers or nodes may help or reduce some noise to make the pattern of data to be not that complex.
+
+## C.Loss Function.
  
 The most famous two loss function known in Neural Network is Softmax and sigmoid. Softmax use the idea of standarization while sigmoid makes multi-class independent.  
 
@@ -71,3 +78,5 @@ Sigmoid function is another kind of activation function that make the original s
 The definiation of the function is here. https://en.wikipedia.org/wiki/Sigmoid_function
 
 #### 3. 
+
+
