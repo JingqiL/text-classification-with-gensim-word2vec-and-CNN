@@ -2,6 +2,9 @@
 
 The reason I prefer to use tensorflow instead of Keras is that you can return layer weights if you want to check what happend during the learning process. This is much more easier to detect which parameters you set may be inappropriate while in Keras, I doubt its convinience in evaluating models. 
 
+For details and results, please turn to my Kaggle Kernel.
+https://www.kaggle.com/jingqliu/conv2d-with-tensorflow-fasttext-2m
+
 ## A. Word Embeddings.
 
 ### 1. Max features.
