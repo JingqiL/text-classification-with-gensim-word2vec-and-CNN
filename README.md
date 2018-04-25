@@ -1,6 +1,6 @@
 # Text Classification with FastText and CNN in Tensorflow.
 
-The reason I prefer to use tensorflow instead of Keras is that you can return layer weights if you want to check what happend during the learning process. This is much more easier to detect which parameters you set may be inappropriate while in Keras, I doubt its convinience in evaluating models. 
+The reason I prefer to use tensorflow instead of Keras is that you can return layer weights if you want to check what happend during the learning process. This is much more easier to detect which parameters you set may be inappropriate while in Keras, I doubt its convinience in evaluating models. My model reaches an accuracy of 97.70%.
 
 For details and results, please turn to my Kaggle Kernel.
 https://www.kaggle.com/jingqliu/conv2d-with-tensorflow-fasttext-2m
@@ -19,7 +19,7 @@ Max features is the number of words that you are going to use in training and te
 
 
 
-## B. Test a Neural Network.
+## B. Tunning params in a Neural Network.
 
 ### 1. Use small batch to test it before runing on large dataset.
 
@@ -49,9 +49,9 @@ One of the most common gradient descent method is mini-batch method. This is goo
 
 ### 6. Filter size (CNN).
 
-### 7. Filters.
+### 7. Filters(CNN).
 
-### 8. Chanels.
+### 8. Chanels(CNN).
 
 ### 9. Loss.
 
